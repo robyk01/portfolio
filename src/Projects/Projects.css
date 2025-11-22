@@ -20,25 +20,41 @@
     margin: 0;
     padding: 7px 10px;
     border-radius: 15px;
-    border: 1px solid rgba(255, 255, 255, 0.2)
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.2s ease;
+}
+
+#projects .categories p:hover{
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+#projects .categories p.active{
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.5);
 }
 
 .projects-grid{
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     width: 100%;
     gap: 25px;
 }
 
 .project-card{
+    display: flex;
+    flex-direction: column;
     padding: 25px;
-    background-color: #242424;
-    border-radius: 12px;
+    background-color: rgb(26, 26, 26);;
+    border-radius: 8px;
     overflow: hidden;
+
 }
 
 .project-card h3{
-    margin: 10px 0 0 0;
+    margin: 20px 0 0 0;
+    color: rgb(231, 229, 228);
 }
 
 .project-card p{
@@ -47,6 +63,52 @@
 
 .project-card img{
     max-width: 100%;
-    border-radius: 12px;
+    border-radius: 8px;
     height: auto;
+}
+
+.project-card .project-description{
+    color: rgba(255, 255, 255, 0.6);
+    font-size: 14px;
+
+}
+
+.project-card .project-card-bottom{
+    display: flex;
+    margin-top: auto;
+    gap: 10px;
+}
+
+.project-card .tech-stack{
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.project-card .tech-tag{
+    font-size: 13px;
+    height: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    background-color: rgba(255, 255, 255, 0.05);;
+    padding: 7px 14px;
+    margin-top: auto;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.project-card a{
+    margin-left: auto;
+    margin-top: auto;
+    background: #2563EB;
+    color: #ffffff;
+    border-radius: 6px;
+    padding: 8px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background .2s ease;
+}
+
+.project-card a:hover{
+    background: #1E4FDB;
 }

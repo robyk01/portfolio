@@ -1,38 +1,39 @@
 import ProjectCard from './ProjectCard';
 import './Projects.css'
-import LearnifyImg from '../assets/Banner 3.png'
+import React, { useState } from 'react'
+import { projects } from '../projectData';
 
 function Projects(){
-    const projects = [
-        {
-        title: "Portfolio Website",
-        description: "A personal website built with React.",
-        image: LearnifyImg,
-        link: "https://example.com/portfolio",
-    },
-    {
-        title: "Chat App",
-        description: "A real-time chat application using socket.io.",
-        image: LearnifyImg,
-        link: "https://example.com/chatapp",
-    },
-    ];
+    const [activeFilter, setActiveFilter] = useState('All');
+
+    const filteredProjects = projects.filter(project => {
+        return activeFilter === 'All' || project.category === activeFilter;
+    })
 
     return(
         <div className="section" id="projects">
             <h2>Projects</h2>
             <div className="categories">
-                <p>Apps</p>
-                <p>Websites</p>
-                <p>Plugins</p>
-                <p>Design</p>
+                <p onClick={() => setActiveFilter('Apps')}
+                    className={activeFilter === 'Apps' ? 'active' : ''}
+                    >Apps</p>
+                <p onClick={() => setActiveFilter('Websites')}
+                    className={activeFilter === 'Websites' ? 'active' : ''}
+                    >Websites</p>
+                <p onClick={() => setActiveFilter('Plugins')}
+                    className={activeFilter === 'Plugins' ? 'active' : ''}
+                    >Plugins</p>
+                <p onClick={() => setActiveFilter('Design')}
+                    className={activeFilter === 'Design' ? 'active' : ''}
+                    >Design</p>
             </div>
             <div className="projects-grid">
-                {projects.map((project, index) => (
+                {filteredProjects.map((project, index) => (
                     <ProjectCard 
                         key={index}
                         title={project.title}
                         description={project.description}
+                        tech={project.tech}
                         image={project.image}
                         link={project.link}
                     />

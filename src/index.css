@@ -4,7 +4,7 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #1a1a1a;
+  background-color: rgb(10, 10, 10);;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -19,7 +19,7 @@ a {
 
 body {
   font-family: 'Inter', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
 
   margin: 0;
@@ -32,7 +32,7 @@ h1, h2, h3{
 }
 
 h1 {
-  font-size: 3.2em;
+  font-size: 3rem;
   font-weight: 700;
   letter-spacing: -2px;
   line-height: 1.1;
@@ -40,6 +40,10 @@ h1 {
 
 h2{
   font-size: 2em;
+}
+
+h3{
+  font-size: 1.35rem;
 }
 
 button {
@@ -82,5 +86,6 @@ button:focus-visible {
 
 .section{
   max-width: 1280px;
+  max-width: 100%;
   padding: 0 50px;
 }
