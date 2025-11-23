@@ -1,4 +1,12 @@
 import LearnifyImg from './assets/Banner 3.png'
+import KreativaImg from './assets/kreativa Mockup.png'
+import CaseLemnImg from './assets/CaseLemn Mockup.png'
+import AzaleeImg from './assets/Azalee Mockup.png'
+import AmiPizzaImg from './assets/Ami Mockup.png'
+import NextImg from './assets/Next Training.png'
+import KDSImg from './assets/kds.png'
+import LMSImg from './assets/Learnify LMS.jpg'
+import TimeflowImg from './assets/timeflow.jpg'
 
 export const projects = [
     // Apps
@@ -6,8 +14,8 @@ export const projects = [
         title: "Kitchen Display System",
         description: "A fullstack Flask app for managing kitchen order displays",
         tech: ["Flask", "Python", "SQLite"],
-        image: LearnifyImg,
-        link: "https://example.com/kitchen",
+        image: KDSImg,
+        link: "https://github.com/robyk01/kitchen-display-system",
         category: "Apps"
     },
     // Websites
@@ -16,14 +24,14 @@ export const projects = [
         description: "Educational website for romanian highschool students preparing for the informatics exam.",
         tech: ["Wordpress", "PHP", "JavaScript", "HTML", "CSS"],
         image: LearnifyImg,
-        link: "https://example.com/portfolio",
+        link: "https://learnify.ro/",
         category: "Websites"
     },
     {
         title: "Azalee",
         description: "E-Commerce shop for a flower company",
         tech: ["Wordpress", "WooCommerce", "PHP", "Javascript", "HTML", "CSS"],
-        image: LearnifyImg,
+        image: AzaleeImg,
         link: "https://florariaazalee.ro",
         category: "Websites"
     },
@@ -31,7 +39,7 @@ export const projects = [
         title: "Kreativa",
         description: "E-Commerce shop for a jewelry company",
         tech: ["Wordpress", "WooCommerce", "PHP"],
-        image: LearnifyImg,
+        image: KreativaImg,
         link: "https://kreativa.ro",
         category: "Websites"
     },
@@ -39,7 +47,7 @@ export const projects = [
         title: "Case Lemn",
         description: "E-Commerce shop for a housing company",
         tech: ["Wordpress", "PHP", "Javascript", "HTML", "CSS"],
-        image: LearnifyImg,
+        image: CaseLemnImg,
         link: "https://caselemn92.ro",
         category: "Websites"
     },
@@ -47,7 +55,7 @@ export const projects = [
         title: "Next Training",
         description: "Courses website",
         tech: ["Wordpress", "PHP"],
-        image: LearnifyImg,
+        image: NextImg,
         link: "https://next-training.ro",
         category: "Websites"
     },
@@ -55,7 +63,7 @@ export const projects = [
         title: "Ami Pizza",
         description: "Pizza e-commerce website",
         tech: ["Wordpress", "WooCommerce", "PHP", "Javascript", "HTML", "CSS"],
-        image: LearnifyImg,
+        image: AmiPizzaImg,
         link: "https://amipizza.ro/",
         category: "Websites"
     },
@@ -64,16 +72,16 @@ export const projects = [
         title: "Learnify LMS",
         description: "A Wordpress plugin that adds a Learning Management System to your website.",
         tech: ["PHP"],
-        image: LearnifyImg,
-        link: "https://example.com/learnify-lms",
+        image: LMSImg,
+        link: "https://github.com/robyk01/learnify-lms",
         category: "Plugins"
     },
     {
         title: "Timeflow Date & Time",
         description: "A WooCommerce plugin that adds date and time functionality for orders",
         tech: ["PHP"],
-        image: LearnifyImg,
-        link: "https://example.com/learnify-lms",
+        image: TimeflowImg,
+        link: "https://github.com/robyk01/timeflow-delivery",
         category: "Plugins"
     },
     // Design

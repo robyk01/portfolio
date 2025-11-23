@@ -11,8 +11,8 @@ function Projects(){
     })
 
     return(
-        <div className="section" id="projects">
-            <h2>Projects</h2>
+        <div className="section" id="portfolio">
+            <h2>Portfolio</h2>
             <div className="categories">
                 <p onClick={() => setActiveFilter('Apps')}
                     className={activeFilter === 'Apps' ? 'active' : ''}

@@ -1,21 +1,21 @@
-#projects{
+#portfolio{
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 300px;
 }
 
-#projects h2{
+#portfolio h2{
     margin: 0px;
 }
 
-#projects .categories{
+#portfolio .categories{
     display: flex;
     gap: 25px;
     margin: 20px 0 20px 0;
 }
 
-#projects .categories p{
+#portfolio .categories p{
     font-size: 12px;
     margin: 0;
     padding: 7px 10px;
@@ -24,13 +24,13 @@
     transition: all 0.2s ease;
 }
 
-#projects .categories p:hover{
+#portfolio .categories p:hover{
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.5);
     cursor: pointer;
 }
 
-#projects .categories p.active{
+#portfolio .categories p.active{
     color: white;
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -70,7 +70,6 @@
 .project-card .project-description{
     color: rgba(255, 255, 255, 0.6);
     font-size: 14px;
-
 }
 
 .project-card .project-card-bottom{
