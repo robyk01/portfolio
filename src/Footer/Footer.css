@@ -10,7 +10,6 @@
     max-width: 1200px;
     padding: 50px;
     width: 100%;
-    max-width: 100%;
     background-image: url('contact_bg.jpg');
     background-size: cover;
     background-position: center;
@@ -94,6 +93,10 @@
         flex-direction: column;
         gap: 20px;
         text-align: center;
+    }
+
+    .footer-content{
+        width: 70%;
     }
 
     .footer-links {

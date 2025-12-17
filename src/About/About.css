@@ -12,12 +12,20 @@
 }
 
 #about h1{
-    width: 30%;
+    width: 100%;
+    max-width: 400px;
     text-align: center;
+    padding: 0 20px;
 }
 
 
 @media (max-width: 768px) {
+    #about h1 {
+        width: 100%;
+        max-width: 80%;
+        padding: 0 20px;
+    }
+
     .about-content {
         flex-direction: column;
         gap: 30px;
