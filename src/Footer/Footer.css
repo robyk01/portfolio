@@ -96,9 +96,9 @@
     }
 
     .footer-content{
-        width: 70%;
+        padding: 0px;
     }
-
+    
     .footer-links {
         flex-direction: column;
         gap: 15px;
