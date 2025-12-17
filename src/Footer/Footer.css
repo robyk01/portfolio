@@ -87,3 +87,21 @@
     padding-top: 15px;
     text-align: center;
 }
+
+@media (max-width: 768px) {
+    footer {
+        padding: 30px 20px;
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+}

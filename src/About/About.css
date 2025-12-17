@@ -15,3 +15,38 @@
     width: 30%;
     text-align: center;
 }
+
+
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .about-text, .about-image {
+        width: 100%;
+    }
+
+    .about-image {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+
+    .about-text h2 {
+        font-size: 1.75rem;
+    }
+
+    .about-text p {
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .about-text h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-image {
+        max-width: 250px;
+    }
+}

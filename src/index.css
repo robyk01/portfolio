@@ -89,4 +89,50 @@ button:focus-visible {
   max-width: 1280px;
   max-width: 100%;
   padding: 0 50px;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 0 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+    letter-spacing: -1px;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  body {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  h2 {
+    font-size: 1.35rem;
+  }
+
+  body {
+    font-size: 14px;
+  }
 }

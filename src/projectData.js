@@ -7,12 +7,23 @@ import NextImg from './assets/Next Training.png'
 import KDSImg from './assets/kds.png'
 import LMSImg from './assets/Learnify LMS.jpg'
 import TimeflowImg from './assets/timeflow.jpg'
+import learnifyUaic from './assets/learnifyUaic.jpg'
 
 export const projects = [
     // Apps
     {
+        title: "Learnify UAIC",
+        slug: "learnify-uaic",
+        description: "A full-Stack app helping UAIC students learn and pass DSA exams.",
+        tech: ["React", "Tailwind", "Supabase"],
+        image: learnifyUaic,
+        link: "https://learnify-uaic.vercel.app",
+        category: "Apps"
+    },
+    {
         title: "Kitchen Display System",
-        description: "A fullstack Flask app for managing kitchen order displays",
+        slug: "kitchen-display-system",
+        description: "A full-Stack Flask app for managing kitchen order displays",
         tech: ["Flask", "Python", "SQLite"],
         image: KDSImg,
         link: "https://github.com/robyk01/kitchen-display-system",
@@ -21,6 +32,7 @@ export const projects = [
     // Websites
     {
         title: "Learnify",
+        slug: "learnify",
         description: "Educational website for romanian highschool students preparing for the informatics exam.",
         tech: ["Wordpress", "PHP", "JavaScript", "HTML", "CSS"],
         image: LearnifyImg,
@@ -29,6 +41,7 @@ export const projects = [
     },
     {
         title: "Azalee",
+        slug: "azalee",
         description: "E-Commerce shop for a flower company",
         tech: ["Wordpress", "WooCommerce", "PHP", "Javascript", "HTML", "CSS"],
         image: AzaleeImg,
@@ -37,6 +50,7 @@ export const projects = [
     },
     {
         title: "Kreativa",
+        slug: "kreativa",
         description: "E-Commerce shop for a jewelry company",
         tech: ["Wordpress", "WooCommerce", "PHP"],
         image: KreativaImg,
@@ -45,6 +59,7 @@ export const projects = [
     },
     {
         title: "Case Lemn",
+        slug: "case-lemn",
         description: "E-Commerce shop for a housing company",
         tech: ["Wordpress", "PHP", "Javascript", "HTML", "CSS"],
         image: CaseLemnImg,
@@ -53,6 +68,7 @@ export const projects = [
     },
     {
         title: "Next Training",
+        slug: "next-training",
         description: "Courses website",
         tech: ["Wordpress", "PHP"],
         image: NextImg,
@@ -61,6 +77,7 @@ export const projects = [
     },
     {
         title: "Ami Pizza",
+        slug: "ami-pizza",
         description: "Pizza e-commerce website",
         tech: ["Wordpress", "WooCommerce", "PHP", "Javascript", "HTML", "CSS"],
         image: AmiPizzaImg,
@@ -70,6 +87,7 @@ export const projects = [
     // Plugins
     {
         title: "Learnify LMS",
+        slug: "learnify-lms",
         description: "A Wordpress plugin that adds a Learning Management System to your website.",
         tech: ["PHP"],
         image: LMSImg,
@@ -78,11 +96,11 @@ export const projects = [
     },
     {
         title: "Timeflow Date & Time",
+        slug: "timeflow-delivery",
         description: "A WooCommerce plugin that adds date and time functionality for orders",
         tech: ["PHP"],
         image: TimeflowImg,
         link: "https://github.com/robyk01/timeflow-delivery",
         category: "Plugins"
-    },
-    // Design
-    ];
+    }
+];

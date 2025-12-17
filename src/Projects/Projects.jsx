@@ -14,6 +14,9 @@ function Projects(){
         <div className="section" id="portfolio">
             <h2>Portfolio</h2>
             <div className="categories">
+                <p onClick={() => setActiveFilter('All')}
+                    className={activeFilter === 'All' ? 'active' : ''}
+                    >All</p>    
                 <p onClick={() => setActiveFilter('Apps')}
                     className={activeFilter === 'Apps' ? 'active' : ''}
                     >Apps</p>
@@ -23,9 +26,9 @@ function Projects(){
                 <p onClick={() => setActiveFilter('Plugins')}
                     className={activeFilter === 'Plugins' ? 'active' : ''}
                     >Plugins</p>
-                <p onClick={() => setActiveFilter('Design')}
+                {/* <p onClick={() => setActiveFilter('Design')}
                     className={activeFilter === 'Design' ? 'active' : ''}
-                    >Design</p>
+                    >Design</p> */}
             </div>
             <div className="projects-grid">
                 {filteredProjects.map((project, index) => (
