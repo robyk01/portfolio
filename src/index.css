@@ -88,6 +88,10 @@ button:focus-visible {
   overflow-x: hidden;
 }
 
+.app-content{
+  padding-top: 120px;
+}
+
 .section{
   max-width: 1280px;
   width: 100%;
