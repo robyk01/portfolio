@@ -4,6 +4,7 @@ import Projects from './Projects/Projects.jsx'
 import Footer from './Footer/Footer.jsx'
 import Blog from './Blog/Blog.jsx'
 import { Routes, Route } from 'react-router-dom'
+import BlogPost from './Blog/BlogPost.jsx'
 
 function Home(){
   return(
@@ -23,6 +24,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
+          <Route path="/blog/:slug" element={<BlogPost />} />
         </Routes>
       </main>
       <Footer />

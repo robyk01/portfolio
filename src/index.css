@@ -4,7 +4,14 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: rgb(10, 10, 10);;
+  
+  background-color: #07070a;
+  background-image:
+    radial-gradient(900px circle at 20% 10%, rgba(59, 130, 246, 0.12), transparent 55%),
+    radial-gradient(800px circle at 80% 30%, rgba(168, 85, 247, 0.10), transparent 60%),
+    radial-gradient(700px circle at 50% 90%, rgba(16, 185, 129, 0.06), transparent 55%),
+    linear-gradient(180deg, #060609 0%, #0a0a0f 40%, #07070a 100%);
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -104,6 +111,10 @@ button:focus-visible {
   .section {
     padding: 0 20px;
     width: 100%;
+  }
+
+  .app-content{
+    padding-top: 20px;
   }
 }
 

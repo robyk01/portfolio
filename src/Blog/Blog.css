@@ -1,0 +1,221 @@
+.blog-page{
+    min-height: 100vh;
+}
+
+.blog-header{
+    margin: 10px 0 24px;
+}
+
+.blog-title{
+    margin: 0;
+    font-size: clamp(2rem, 3.2vw, 3rem);
+    letter-spacing: -0.02em;
+}
+
+.blog-subtitle{
+    margin: 20px 0 0;
+    color: rgba(255, 255, 255, 0.68);
+}
+
+
+/* List */
+.blog-grid{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 18px;
+    margin-top: 40px;
+}
+
+.blog-grid > a{
+    grid-column: span 6;
+    color: inherit;
+    text-decoration: none;
+}
+
+/* Card */
+.post-card{
+    height: 100%;
+    padding: 18px 18px 16px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 12px;
+    background: transparent;
+    transition: border-color ease, background ease;
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    flex-direction: column;
+}
+
+.blog-grid > a:hover .post-card{
+    border-color: rgba(255, 255, 255, 0.06);
+}
+
+.post-card::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        radial-gradient(600px circle at 20% 0%, rgba(96, 165, 250, 0.18), transparent 55%),
+        radial-gradient(700px circle at 100% 50%, rgba(168, 85, 247, 0.10), transparent 60%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    pointer-events: none;
+}
+
+.blog-grid > a:hover .post-card::before{
+    opacity: 1;
+}
+
+.post-card h2{
+    text-align: left;
+    margin: 0 0 10px;
+    font-size: 1.2rem;
+    line-height: 1.25;
+    letter-spacing: -0.01em;
+}
+
+.post-meta time{
+    color: rgba(255, 255, 255, 0.48);
+}
+
+.post-cta{
+    margin-top: auto;
+    display: inline-flex;
+    gap: 8px;
+    align-items: center;
+    font-weight: 600;
+    color: rgba(255,255,255,0.85);
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+  .blog-grid > a{ grid-column: span 12; }
+}
+
+@media (max-width: 480px) {
+  .post-card{
+    padding: 16px 14px 14px;
+  }
+
+  .post-card h2{
+    font-size: 1.1rem;
+  }
+}
+
+
+
+
+/* Blog Post */
+.blog-post{
+    min-height: 100vh;
+}
+
+.blog-back{
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: rgba(255,255,255,0.70);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.blog-back:hover{
+    color: rgba(255,255,255,0.92);
+}
+
+.blog-back::before{
+    content: "←";
+    opacity: 0.85;
+}
+
+.blog-post-title{
+    margin: 40px 0 10px;
+    line-height: 1.08;
+    font-size: clamp(2rem, 3.6vw, 3.4rem);
+    letter-spacing: -0.03em;
+}
+
+.blog-post-meta{
+    color: rgba(255,255,255,0.55);
+    font-size: 0.95rem;
+}
+
+.blog-article{
+
+}
+
+/* Elements */
+
+.blog-article p{
+    color: rgba(255,255,255,0.86);
+}
+
+.blog-article a{
+    color: rgba(96, 165, 250, 0.95);
+    text-decoration: underline;
+    text-decoration-color: rgba(96, 165, 250, 0.35);
+    text-underline-offset: 3px;
+}
+
+.blog-article a:hover{
+    text-decoration-color: rgba(96, 165, 250, 0.7);
+}
+
+.blog-article h2{
+    margin: 1.35em 0 0.55em;
+    font-size: 1.55rem;
+    letter-spacing: -0.02em;
+}
+
+.blog-article h3{
+    margin: 1.15em 0 0.45em;
+    font-size: 1.25rem;
+}
+
+.blog-article ul,
+.blog-article ol{
+    margin: 0 0 1.05em;
+    padding-left: 1.2em;
+}
+
+.blog-article li{
+    margin: 0.35em 0;
+    color: rgba(255,255,255,0.84);
+}
+
+/* Quotes */
+.blog-article blockquote{
+    margin: 1.2em 0;
+    padding: 12px 14px;
+    border-left: 3px solid rgba(96, 165, 250, 0.8);
+    background: rgba(96, 165, 250, 0.08);
+    color: rgba(255,255,255,0.88);
+    border-radius: 12px;
+}
+
+/* Inline code */
+.blog-article code{
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+    font-size: 0.92em;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.10);
+    padding: 0.15em 0.35em;
+    border-radius: 8px;
+}
+
+/* Code blocks */
+.blog-article pre{
+    margin: 1.1em 0;
+    padding: 14px 14px;
+    overflow: auto;
+    border-radius: 12px;
+    background: rgba(0,0,0,0.40);
+    border: 1px solid rgba(255,255,255,0.10);
+}
+
+.blog-article pre code{
+    background: transparent;
+    border: 0;
+    padding: 0;
+}

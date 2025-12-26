@@ -24,6 +24,10 @@
 
 
 @media (max-width: 768px) {
+    #about{
+        min-height: 100vh;
+    }
+
     #about h1 {
         width: 100%;
         max-width: 80%;
