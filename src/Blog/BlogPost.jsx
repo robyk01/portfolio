@@ -4,6 +4,29 @@ import { client } from "../client";
 import { PortableText } from "@portabletext/react";
 import "./Blog.css"
 
+import Prism from "prismjs"
+import "prismjs/themes/prism-tomorrow.css";
+import "prismjs/components/prism-python";
+
+const portableTextComponents = {
+    types: {
+        code: ({value}) => {
+            const code = value?.code ?? "";
+            const language = value?.language ?? "";
+            const filename = value?.filename;
+
+            return (
+                <figure className="pt-code">
+                    {filename && <figcaption className="pt-code__filename">{filename}</figcaption>}
+                    <pre className={`language-${language}`}>
+                        <code className={`language-${language}`}>{code}</code>
+                    </pre>
+                </figure>
+            );
+        }
+    }
+};
+
 function BlogPost(){
     const [post, setPost] = useState(null)
 
@@ -18,6 +41,10 @@ function BlogPost(){
         .then((data) => setPost(data))
         .catch(console.error)
     }, [slug])
+
+    useEffect(() => {
+        Prism.highlightAll();
+    }, [post]);
 
     return(
         <main className="section blog-post">
@@ -36,7 +63,7 @@ function BlogPost(){
             </header>
 
             <article className="blog-article">
-                <PortableText value={post?.body} />
+                <PortableText value={post?.body ?? []} components={portableTextComponents} />
             </article>
         </main>
     );
