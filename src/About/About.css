@@ -1,8 +1,8 @@
 #about{
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
+    max-width: 400px;
     min-height: calc(100vh - 120px);
     padding-top: 0px;
 }
@@ -20,46 +20,32 @@
     margin: 5px;
 }
 
+#about p{
+    max-width: 400px;
+}
+
 @media (max-width: 768px) {
     #about{
         min-height: 100vh;
+        padding: 0 20px;
     }
 
     #about h1 {
         width: 100%;
         max-width: 80%;
-        padding: 0 20px;
     }
 
-    .about-content {
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .about-text, .about-image {
-        width: 100%;
-    }
-
-    .about-image {
-        max-width: 300px;
-        margin: 0 auto;
-    }
-
-    .about-text h2 {
+    #about h2 {
         font-size: 1.75rem;
     }
 
-    .about-text p {
+    #about p {
         font-size: 0.95rem;
     }
 }
 
 @media (max-width: 480px) {
-    .about-text h2 {
+    #about h2 {
         font-size: 1.5rem;
-    }
-
-    .about-image {
-        max-width: 250px;
     }
 }
