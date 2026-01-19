@@ -23,9 +23,9 @@ function Projects(){
                 <p onClick={() => setActiveFilter('Websites')}
                     className={activeFilter === 'Websites' ? 'active' : ''}
                     >Websites</p>
-                <p onClick={() => setActiveFilter('Plugins')}
-                    className={activeFilter === 'Plugins' ? 'active' : ''}
-                    >Plugins</p>
+                <p onClick={() => setActiveFilter('Other')}
+                    className={activeFilter === 'Other' ? 'active' : ''}
+                    >Other</p>
                 {/* <p onClick={() => setActiveFilter('Design')}
                     className={activeFilter === 'Design' ? 'active' : ''}
                     >Design</p> */}

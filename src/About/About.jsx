@@ -3,8 +3,15 @@ import './About.css'
 function About(){
     return(
         <div className="section" id="about">
-            <h2>Amore Roberto</h2>
-            <h1>Junior software developer</h1>
+            <h3>Amore Roberto</h3>
+            <h1>
+                <span>Computer Science &</span>
+                <span>AI Student</span>
+            </h1>
+            <p>
+                <span>First-year CS AI student at UAIC interested in AI systems, autonomous agents and research.</span>
+                <span>Currently working with: Python, React, Supabase</span>
+            </p>
         </div>
     );
 }
