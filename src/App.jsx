@@ -5,7 +5,7 @@ import Footer from './Footer/Footer.jsx'
 import Blog from './Blog/Blog.jsx'
 import { Routes, Route } from 'react-router-dom'
 import BlogPost from './Blog/BlogPost.jsx'
-import { Analytics } from "@vercel/analytics/next"
+import { Analytics } from "@vercel/analytics/react"
 
 function Home(){
   return(
