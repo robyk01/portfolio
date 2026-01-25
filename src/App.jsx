@@ -5,6 +5,7 @@ import Footer from './Footer/Footer.jsx'
 import Blog from './Blog/Blog.jsx'
 import { Routes, Route } from 'react-router-dom'
 import BlogPost from './Blog/BlogPost.jsx'
+import { Analytics } from "@vercel/analytics/next"
 
 function Home(){
   return(
@@ -19,6 +20,7 @@ function Home(){
 function App() {
   return(
     <>
+    <Analytics />
       <Navbar />
       <main className='app-content'>
         <Routes>
