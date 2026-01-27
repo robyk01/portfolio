@@ -39,11 +39,6 @@ export default function Blog() {
                   {new Date(post.publishedAt).toLocaleDateString()}
                 </time>
               </div>
-
-              <div className="post-cta">
-                Read <span>→</span>
-              </div>
-
             </article>
           </Link>
         ))}

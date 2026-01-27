@@ -48,11 +48,8 @@ function BlogPost(){
 
     return(
         <main className="section blog-post">
-            <Link to="/blog" className="blog-back">Back to blog</Link>
 
             <header className="blog-post-header">
-                <h1 className="blog-post-title">{post?.title}</h1>
-
                 {post?.publishedAt && (
                     <div className="blog-post-meta">
                         <time dateTime={post.publishedAt}>
@@ -60,6 +57,8 @@ function BlogPost(){
                         </time>
                     </div>
                 )}
+
+                <h1 className="blog-post-title">{post?.title}</h1>
             </header>
 
             <article className="blog-article">
