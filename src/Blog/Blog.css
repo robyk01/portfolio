@@ -150,7 +150,11 @@
     margin-top: 12px;
 }
 
-.blog-article h2, h3, h4, h5, h6{
+.blog-article h2,
+.blog-article h3,
+.blog-article h4,
+.blog-article h5,
+.blog-article h6{
     margin-top: 48px;
     margin-bottom: 0;
     text-wrap: balance;
@@ -248,4 +252,22 @@
 .pt-code pre code{
     white-space: pre-wrap;
     overflow-wrap: anywhere;
+}
+
+.pt-image{
+    margin: 1.2em 0;
+}
+
+.pt-image img{
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+}
+
+.pt-image figcaption{
+    margin-top: 8px;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.6);
+    text-align: center;
 }

@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import { client } from "../client";
 import { PortableText } from "@portabletext/react";
 import "./Blog.css"
@@ -7,6 +7,10 @@ import "./Blog.css"
 import Prism from "prismjs"
 import "prismjs/themes/prism-tomorrow.css";
 import "prismjs/components/prism-python";
+import { createImageUrlBuilder } from "@sanity/image-url";
+
+const builder = createImageUrlBuilder(client);
+const urlFor = (source) => builder.image(source);
 
 const portableTextComponents = {
     types: {
@@ -21,6 +25,20 @@ const portableTextComponents = {
                     <pre className={`language-${language}`}>
                         <code className={`language-${language}`}>{code}</code>
                     </pre>
+                </figure>
+            );
+        },
+        image: ({ value }) => {
+            if (!value?.asset) return null;
+
+            return (
+                <figure className="pt-image">
+                    <img
+                        src={urlFor(value).width(1400).fit("max").auto("format").url()}
+                        alt={value?.alt || ""}
+                        loading="lazy"
+                    />
+                    {value?.caption && <figcaption>{value.caption}</figcaption>}
                 </figure>
             );
         }
