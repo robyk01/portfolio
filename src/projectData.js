@@ -9,8 +9,18 @@ import LMSImg from './assets/Learnify LMS.jpg'
 import TimeflowImg from './assets/timeflow.jpg'
 import learnifyUaic from './assets/learnifyUaic.jpg'
 import AgentIMG from './assets/agent.jpg'
+import OrionBG from './assets/orion_bg.jpg'
 
 export const projects = [
+    {
+        title: "Orion",
+        slug: "orion",
+        description: "Full-stack app and research environment for AI-assisted system diagnostics in deep-space environments.",
+        tech: ["FastAPI", "React", "Scikit-Learn"],
+        image: OrionBG,
+        link: "https://github.com/robyk01/orion",
+        category: "Apps"
+    },
     {
         title: "AI Agents Research",
         slug: "ai-agents",
