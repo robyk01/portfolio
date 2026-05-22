@@ -10,7 +10,7 @@ function About(){
             </h1>
             <p>
                 <span>First-year CS AI student @ UAIC.</span> 
-                <span>Interested in AI systems, autonomous agents and research.</span>
+                <span>Interested in AI, research & space applications.</span>
                 <span>Currently working with: Python, React, Supabase</span>
             </p>
         </div>
