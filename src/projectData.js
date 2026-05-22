@@ -10,8 +10,38 @@ import TimeflowImg from './assets/timeflow.jpg'
 import learnifyUaic from './assets/learnifyUaic.jpg'
 import AgentIMG from './assets/agent.jpg'
 import OrionBG from './assets/orion_bg.jpg'
+import FiicodeIMG from './assets/fiicodelogo.png'
+import CassiniIMG from './assets/cassinilogo.png'
+import RospinIMG from './assets/rospin.png'
 
 export const projects = [
+    {
+        title: "ROSPIN Academy Mars Satellite Constellation",
+        slug: "cassini",
+        description: "Satellite orbital mechanics and Walker Delta phasing simulation to optimize dual-layer Martian relay coverage",
+        tech: ["Python"],
+        image: RospinIMG,
+        link: "https://github.com/robyk01/rospin-mars-satellite-constellation/",
+        category: "Other"
+    },
+    {
+        title: "Cassini Space for Water Hackathon",
+        slug: "cassini",
+        description: "Satellite data AI risk assessment heatmap.",
+        tech: ["Python", "Numpy", "Scikit-Learn"],
+        image: CassiniIMG,
+        link: "https://github.com/comshiro/WaterCore",
+        category: "Other"
+    },
+    {
+        title: "FiiCode AI&ML Hackathon",
+        slug: "fiicode",
+        description: "Predictive Modeling & Demand Forecasting - FIICode Finals",
+        tech: ["Python", "Numpy", "Scikit-Learn"],
+        image: FiicodeIMG,
+        link: "https://github.com/robyk01/FiiCode-AI-2026",
+        category: "Other"
+    },
     {
         title: "Orion",
         slug: "orion",
