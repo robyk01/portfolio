@@ -18,7 +18,7 @@ export const projects = [
     {
         title: "ROSPIN Academy Mars Satellite Constellation",
         slug: "cassini",
-        description: "Satellite orbital mechanics and Walker Delta phasing simulation to optimize dual-layer Martian relay coverage",
+        description: "Aerospace engineering report optimizing dual-shell Martian orbits using orbital mechanics and spherical geometry models.",
         tech: ["Python"],
         image: RospinIMG,
         link: "https://github.com/robyk01/rospin-mars-satellite-constellation/",
