@@ -9,9 +9,9 @@ function About(){
                 <span>AI Student</span>
             </h1>
             <p>
-                <span>First-year CS AI student @ UAIC.</span> 
-                <span>Interested in AI, research & space applications.</span>
-                <span>Currently working with: Python, React, Supabase</span>
+                <span>Second-year CS AI student @ UAIC.</span> 
+                <span>Interested in AI, research & autonomous space systems.</span>
+                <span>Currently working with: Python, Scikit-Learn, PyTorch, React.</span>
             </p>
         </div>
     );
