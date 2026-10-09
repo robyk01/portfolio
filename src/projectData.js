@@ -13,8 +13,28 @@ import OrionBG from './assets/orion_bg.jpg'
 import FiicodeIMG from './assets/fiicodelogo.png'
 import CassiniIMG from './assets/cassinilogo.png'
 import RospinIMG from './assets/rospin.png'
+import SynapseImg from './assets/synapse.jpg'
+import UnibotImg from './assets/unibot.jpg'
 
 export const projects = [
+    {
+        title: "Spacecraft Neuromorphic Architecture",
+        slug: "spacecraft-neuromorphic-architecture",
+        description: "Onboard satellite image processing and EuroSAT land cover classification using BrainChip Akida neuromorphic hardware (SNN) and Quantization-Aware Training (QAT).",
+        tech: ["Python", "TensorFlow", "BrainChip Akida", "SNN", "QAT"],
+        image: SynapseImg,
+        link: "https://github.com/robyk01/spacecraft-neuromorphic-architecture",
+        categories: ["AI & ML", "Space", "Research"]
+    },
+    {
+        title: "UniBot - Humanoid Robotics Lab",
+        slug: "unibot",
+        description: "R&D for the UniBot World Challenge: dynamics, kinematics, and control theory from first-principles simulation to whole-body humanoid manipulation on Unitree G1.",
+        tech: ["Python", "MuJoCo", "Dynamics & Control", "Unitree G1", "Robotics"],
+        image: UnibotImg,
+        link: "https://github.com/robyk01/unibot",
+        categories: ["Robotics", "AI & ML"]
+    },
     {
         title: "ROSPIN Academy Mars Satellite Constellation",
         slug: "cassini",
@@ -22,7 +42,7 @@ export const projects = [
         tech: ["Python"],
         image: RospinIMG,
         link: "https://github.com/robyk01/rospin-mars-satellite-constellation/",
-        category: "Other"
+        categories: ["Space"]
     },
     {
         title: "Cassini Space for Water Hackathon",
@@ -31,7 +51,7 @@ export const projects = [
         tech: ["Python", "Numpy", "Scikit-Learn"],
         image: CassiniIMG,
         link: "https://github.com/comshiro/WaterCore",
-        category: "Other"
+        categories: ["Space", "AI & ML"]
     },
     {
         title: "FiiCode AI&ML Hackathon",
@@ -40,7 +60,7 @@ export const projects = [
         tech: ["Python", "Numpy", "Scikit-Learn"],
         image: FiicodeIMG,
         link: "https://github.com/robyk01/FiiCode-AI-2026",
-        category: "Other"
+        categories: ["AI & ML"]
     },
     {
         title: "Orion",
@@ -49,7 +69,7 @@ export const projects = [
         tech: ["FastAPI", "React", "Scikit-Learn"],
         image: OrionBG,
         link: "https://github.com/robyk01/orion",
-        category: "Apps"
+        categories: ["AI & ML", "Space", "Research"]
     },
     {
         title: "AI Agents Research",
@@ -58,9 +78,8 @@ export const projects = [
         tech: ["Python", "Pydantic"],
         image: AgentIMG,
         link: "https://github.com/robyk01/ai-agents",
-        category: "Other"
+        categories: ["AI & ML"]
     },
-    // Apps
     {
         title: "Learnify UAIC",
         slug: "learnify-uaic",
@@ -68,7 +87,7 @@ export const projects = [
         tech: ["React", "Tailwind", "Supabase"],
         image: learnifyUaic,
         link: "https://learnify-uaic.vercel.app",
-        category: "Apps"
+        categories: ["Other"]
     },
     {
         title: "Kitchen Display System",
@@ -77,7 +96,7 @@ export const projects = [
         tech: ["Flask", "Python", "SQLite"],
         image: KDSImg,
         link: "https://github.com/robyk01/kitchen-display-system",
-        category: "Apps"
+        categories: ["Other"]
     },
     {
         title: "Learnify",
@@ -86,9 +105,8 @@ export const projects = [
         tech: ["Wordpress", "PHP", "JavaScript"],
         image: LearnifyImg,
         link: "https://learnify.ro/",
-        category: "Websites"
+        categories: ["Other"]
     },
-    // Other
     {
         title: "Learnify LMS",
         slug: "learnify-lms",
@@ -96,7 +114,7 @@ export const projects = [
         tech: ["PHP"],
         image: LMSImg,
         link: "https://github.com/robyk01/learnify-lms",
-        category: "Other"
+        categories: ["Other"]
     },
     {
         title: "Timeflow Date & Time",
@@ -105,9 +123,8 @@ export const projects = [
         tech: ["PHP"],
         image: TimeflowImg,
         link: "https://github.com/robyk01/timeflow-delivery",
-        category: "Other"
+        categories: ["Other"]
     },
-    // Websites
     {
         title: "Azalee",
         slug: "azalee",
@@ -115,7 +132,7 @@ export const projects = [
         tech: ["Wordpress", "WooCommerce", "PHP", "Javascript"],
         image: AzaleeImg,
         link: "https://florariaazalee.ro",
-        category: "Websites"
+        categories: ["Other"]
     },
     {
         title: "Kreativa",
@@ -124,7 +141,7 @@ export const projects = [
         tech: ["Wordpress", "WooCommerce", "PHP"],
         image: KreativaImg,
         link: "https://kreativa.ro",
-        category: "Websites"
+        categories: ["Other"]
     },
     {
         title: "Case Lemn",
@@ -133,7 +150,7 @@ export const projects = [
         tech: ["Wordpress", "PHP", "Javascript"],
         image: CaseLemnImg,
         link: "https://caselemn92.ro",
-        category: "Websites"
+        categories: ["Other"]
     },
     {
         title: "Next Training",
@@ -142,7 +159,7 @@ export const projects = [
         tech: ["Wordpress", "PHP"],
         image: NextImg,
         link: "https://next-training.ro",
-        category: "Websites"
+        categories: ["Other"]
     },
     {
         title: "Ami Pizza",
@@ -151,6 +168,6 @@ export const projects = [
         tech: ["Wordpress", "WooCommerce", "PHP", "Javascript"],
         image: AmiPizzaImg,
         link: "https://amipizza.ro/",
-        category: "Websites"
+        categories: ["Other"]
     },
 ];

@@ -3,32 +3,32 @@ import './Projects.css'
 import React, { useState } from 'react'
 import { projects } from '../projectData';
 
+const CATEGORIES = ['All', 'AI & ML', 'Research', 'Space', 'Robotics', 'Other'];
+
 function Projects(){
     const [activeFilter, setActiveFilter] = useState('All');
 
     const filteredProjects = projects.filter(project => {
-        return activeFilter === 'All' || project.category === activeFilter;
-    })
+        if (activeFilter === 'All') return true;
+        const projectCategories = Array.isArray(project.categories)
+            ? project.categories
+            : (project.category ? [project.category] : []);
+        return projectCategories.includes(activeFilter);
+    });
 
     return(
         <div className="section" id="portfolio">
             <h2>Portfolio</h2>
             <div className="categories">
-                <p onClick={() => setActiveFilter('All')}
-                    className={activeFilter === 'All' ? 'active' : ''}
-                    >All</p>    
-                <p onClick={() => setActiveFilter('Apps')}
-                    className={activeFilter === 'Apps' ? 'active' : ''}
-                    >Apps</p>
-                <p onClick={() => setActiveFilter('Websites')}
-                    className={activeFilter === 'Websites' ? 'active' : ''}
-                    >Websites</p>
-                <p onClick={() => setActiveFilter('Other')}
-                    className={activeFilter === 'Other' ? 'active' : ''}
-                    >Other</p>
-                {/* <p onClick={() => setActiveFilter('Design')}
-                    className={activeFilter === 'Design' ? 'active' : ''}
-                    >Design</p> */}
+                {CATEGORIES.map(category => (
+                    <p
+                        key={category}
+                        onClick={() => setActiveFilter(category)}
+                        className={activeFilter === category ? 'active' : ''}
+                    >
+                        {category}
+                    </p>
+                ))}
             </div>
             <div className="projects-grid">
                 {filteredProjects.map((project, index) => (

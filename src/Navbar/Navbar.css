@@ -23,7 +23,17 @@
 }
 
 #navbar ul li a{
-    color: white;
+    color: rgba(255, 255, 255, 0.7);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.2s ease, opacity 0.2s ease;
+    cursor: pointer;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.active{
+    color: #ffffff;
+    opacity: 1;
 }
 
 

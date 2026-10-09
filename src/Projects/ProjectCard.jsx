@@ -1,9 +1,7 @@
-import { Link } from "react-router-dom";
-
 function ProjectCard(props){
     return(
         <div className="project-card">
-            <img src={props.image} alt={props.title}></img>
+            <img src={props.image} alt={props.title} />
             <h3>{props.title}</h3>
             <p className="project-description">{props.description}</p>
             <div className="project-card-bottom">
@@ -14,7 +12,7 @@ function ProjectCard(props){
                         </span>
                     ))}
                 </div>
-                <a href={props.link}>View</a>
+                <a href={props.link} target="_blank" rel="noopener noreferrer">View</a>
             </div>
         </div>
     );
